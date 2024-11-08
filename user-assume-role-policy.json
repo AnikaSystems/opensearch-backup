@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::767397755561:role/TheSnapshotRole"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "es:ESHttpPut"
+            ],
+            "Resource": "arn:aws:es:region:767397755561:domain/mydomain/*"
+        }
+    ]
+}
